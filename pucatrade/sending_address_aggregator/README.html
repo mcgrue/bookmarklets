@@ -1,0 +1,15 @@
+<h1>Pucatrade sending address aggregator</h1>
+
+<p>This bookmarklet will collect all of the addresses you need to send cards to as listed on your Active Trades page.</p>
+
+<ol>
+    <li> 
+        <a id="codeOut" href="javascript:(function(){javascript:(function(){var dquo=String.fromCharCode(34);var ret={};var a=$('.copy_to_clipboard');a.each(function(){var b=$(this);var result=b.attr('onclick').replace('window.prompt('+dquo+'Copy to clipboard: Ctrl+C, Enter'+dquo+', '+dquo,'').replace(dquo+');','');ret[result]=1;});$('body').html('');var taco=$('<textarea COLS=80 ROWS=15 id=output></textarea>');$('body').append(taco);var tmp='';for(addr in ret){tmp+=addr+'\n\n';}tmp=tmp.replace(/\\n/g,'\n');$('#output').val(tmp);})();})();">The bookmarklet - copy this link into your bookmarks.</a>
+    </li>
+    <li> Login to pucatrade and click on <a href=https://pucatrade.com/trades/active>https://pucatrade.com/trades/active</a>
+    </li>
+    <li> Click on the bookmark while on that page. The list of addresses you need to mail to has now been put into a text field for you to copy around.<p>
+        (Refreshing the page will return it to its normal state.)
+    </li>
+    <li> Share and enjoy!</li>
+</ol>
